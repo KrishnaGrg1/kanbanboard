@@ -40,7 +40,7 @@ export function useLogin() {
 
 
 export function useRegister() {
-  const router = useRouter()
+  // const router = useRouter()
   const setUser = useAuthStore((s) => s.setUser)
 
   return useMutation({
@@ -60,7 +60,7 @@ export function useRegister() {
     onSuccess: () => {
   toast.success("Successfully register ")
 
-      router.push('/login')
+      // router.push('/login')
     },
   })
 }

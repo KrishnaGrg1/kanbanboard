@@ -142,7 +142,12 @@ export function RegisterForm() {
                 </FormItem>
               )}
             />
-
+            {register.isSuccess && (
+              <div className="text-green-600 text-center">
+                Successfully registered. We have sent email verification
+                successfully in your email
+              </div>
+            )}
             {/* Submit Button */}
             <Button
               type="submit"
